@@ -1,6 +1,8 @@
 Autonomous vehicle technology has been developed in the last decades with recent advances in sensing and computing technology. There is an urgent need to ensure the reliability and robustness of autonomous driving systems (ADSs). Despite the recent achievements in automatically testing various modules of ADSs, little attention has been paid on the automated testing of traffic light detection models in ADSs. A common practice is to manually collect and label traffic light data. However, it is labor-intensive, and even impossible to collect diverse data under different driving environments.
 To address these problems, we propose and implement **TigAug** to automatically augment labeled traffic light images for testing traffic light detection models in ADSs. We construct two families of metamorphic relations and three families of transformations based on a systematic understanding of weather environments, camera properties, and traffic light properties. We use augmented images to detect erroneous behaviors of traffic light detection models by transformationspecific metamorphic relations, and to improve the performance of traffic light detection models by retraining. Large-scale experiments with four state-of-the-art traffic light detection models and two traffic light data sets have demonstrated that (i) **TigAug** is effective in testing traffic light detection models, (ii) **TigAug** is efficient in synthesizing traffic light images and retraining models, and (iii) **TigAug** generates high-quality traffic light images without the need of cleaning.
 
+The paper has been submitted to ASE 2023.
+
 
 
 ## Methodology
@@ -27,7 +29,7 @@ In the paper, we describe the implementation of 12 transformation techniques in 
 | ![RT-O](img/RT-O.jpg)  | ![RT-A](img/RT-A.jpg)  |              |
 | ![SC-O](img/SC-O.jpg)  | ![SC-A](img/SC-A.jpg)  |              |
 
-**All the augmented datasets and codes are available [here](https://zenodo.org/record/7694860).**
+**All the augmented datasets, models we use, and codes  for transformations are available [here](https://zenodo.org/record/7694860).**
 
 ## Research Questions
 
@@ -42,14 +44,25 @@ We design the following four research questions to evaluate the effectiveness an
 
 ## Evaluation
 
-Following the procedure presented in the paper, we have...
+Following the procedure presented in the paper, we have conducted a detailed analysis of the above four issues. Here are some charts that were not presented in the paper due to the length of the article
+
+1. **mAP of the 8 Retrained Models on Original Dataset, All the Augmented Datasets, and Augmented Datasets of LISA w.r.t 12 Transformations**
+
+|                       |                        |
+| --------------------- | ---------------------- |
+| YOLOv5 - *LISA*       | YOLOv5 - *Bosch*       |
+|                       |                        |
+| YOLOX - *LISA*        | YOLOX - *Bosch*        |
+|                       |                        |
+| Faster R-CNN - *LISA* | Faster R-CNN - *Bosch* |
+|                       |                        |
+| SSD - *LISA*          | SSD - *Bosch*          |
 
 
-mAP of the 8 Retrained models on original datasets, all the augmented datsets, and the augmented datasets w.r.t 12 transformations.
 
 
 
-Time consumption 
+2. **Time consumption**
 
 | ![transformation-time](img/transformation-time.jpg) | ![retrain-time](img/retrain-time.jpg) |
 | :-------------------------------------------------: | :-----------------------------------: |
@@ -59,7 +72,7 @@ Time consumption
 
 
 
-Naturalness analysis 
+3. **Naturalness analysis** 
 
 
 
