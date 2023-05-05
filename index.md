@@ -49,9 +49,8 @@ Following the procedure presented in the paper, we have...
 Time consumption 
 
 | ![transformation-time](img/transformation-time.jpg) | ![retrain-time](img/retrain-time.jpg) |
-| --------------------------------------------------- | ------------------------------------- |
-
-
+| :-------------------------------------------------: | :-----------------------------------: |
+|                Time for Augmentaion                 |          Time for Retraining          |
 
 
 
