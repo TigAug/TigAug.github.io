@@ -13,9 +13,21 @@ On the basis of our domain analysis, **TigAug** first applies transformations on
 
 ## Samples of Our Augmented Datasets
 
-xx
+Here are some samples of our augmented datasets.
 
-**All the augmented datasets and codes are available [here](https://zenodo.org/record/7694860).**
+![sample](img/sample.png)
+
+In the paper, we describe the implementation of 12 transformation techniques in detail . What sets our work apart from previous research is that when transforming images, we aim to make them as realistic and close to reality as possible. In addition to traditional weather transformations, we have designed transformation specifically for traffic lights themselves in order to enrich the diversity of positions and states of traffic lights in images and ensure the synthesized traffic lights still follow existing regulations as much as possible.
+
+|    Original images     |    Augmented images    | Descriptions |
+| :--------------------: | :--------------------: | :----------: |
+| ![CC-O](img/CC-O.jpg)  | ![CC-A](img/CC-A.jpg)  |              |
+| ![MP-O](img/MP-O.jpg)  | ![MP-A](img/MP-A.jpg)  |              |
+| ![AD-O](img/AD-O.jpeg) | ![AD-A](img/AD-A.jpeg) |              |
+| ![RT-O](img/RT-O.jpg)  | ![RT-A](img/RT-A.jpg)  |              |
+| ![SC-O](img/SC-O.jpg)  | ![SC-A](img/SC-A.jpg)  |              |
+
+**All the augmented datasets and codes are available [here]().**
 
 ## Research Questions
 
@@ -30,17 +42,28 @@ We design the following four research questions to evaluate the effectiveness an
 
 ## Evaluation
 
-Following the procedure presented in the paper. 
-
-RQ1:
-
-RQ2:
-
-RQ3:
-
-RQ4:
+Following the procedure presented in the paper, we have...
 
 
 
+Time consumption 
 
+| ![transformation-time](img/transformation-time.jpg) | ![retrain-time](img/retrain-time.jpg) |
+| --------------------------------------------------- | ------------------------------------- |
+
+
+
+
+
+
+
+Naturalness analysis 
+
+
+
+![rq4-yolox-O](img/rq4-yolox-O.jpg)
+
+
+
+![rq4-yolox-A](img/rq4-yolox-A.jpg)
 
