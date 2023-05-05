@@ -27,7 +27,7 @@ In the paper, we describe the implementation of 12 transformation techniques in 
 | ![RT-O](img/RT-O.jpg)  | ![RT-A](img/RT-A.jpg)  |              |
 | ![SC-O](img/SC-O.jpg)  | ![SC-A](img/SC-A.jpg)  |              |
 
-**All the augmented datasets and codes are available [here]().**
+**All the augmented datasets and codes are available [here](https://zenodo.org/record/7694860).**
 
 ## Research Questions
 
@@ -43,6 +43,9 @@ We design the following four research questions to evaluate the effectiveness an
 ## Evaluation
 
 Following the procedure presented in the paper, we have...
+
+
+mAP of the 8 Retrained models on original datasets, all the augmented datsets, and the augmented datasets w.r.t 12 transformations.
 
 
 
