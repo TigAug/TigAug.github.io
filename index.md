@@ -21,7 +21,7 @@ Here are some samples of our augmented datasets.
 
 In the paper, we describe the implementation of 12 transformation techniques in detail . What sets our work apart from previous research is that when transforming images, we aim to make them as realistic and close to reality as possible. In addition to traditional weather transformations, we have designed transformation specifically for traffic lights themselves in order to enrich the diversity of positions and states of traffic lights in images and ensure the synthesized traffic lights still follow existing regulations as much as possible.
 
-|        |    Original images     |    Augmented images    | Descriptions                                                 |
+|        |           O            |           A            | Descriptions                                                 |
 | ------ | :--------------------: | :--------------------: | :----------------------------------------------------------- |
 | **CC** | ![CC-O](img/CC-O.jpg)  | ![CC-A](img/CC-A.jpg)  | In Bai et al.’s work, the color of the traffic light is changed by labeling the traffic light bulb and assigning a single color (such as red (255, 0, 0)) to the bulb according to certain rules. On the contrary, we use HSV to change the color tone of traffic lights, which can make the generated images closer to real world and does not require additional labeling of traffic light bulbs. |
 | **MP** | ![MP-O](img/MP-O.jpg)  | ![MP-A](img/MP-A.jpg)  | To make the generated images closer to real life, we only move traffic lights by a small distance when changing the position of traffic lights, ensuring that the traffic lights are still on the lamppost, rather than in other unreasonable places. |
