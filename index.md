@@ -21,7 +21,7 @@ Here are some samples of our augmented datasets.
 
 In the paper, we describe the implementation of 12 transformation techniques in detail . What sets our work apart from previous research is that when transforming images, we aim to make them as realistic and close to reality as possible. In addition to traditional weather transformations, we have designed transformation specifically for traffic lights themselves in order to enrich the diversity of positions and states of traffic lights in images and ensure the synthesized traffic lights still follow existing regulations as much as possible.
 
-|        |           O            |           A            | Descriptions                                                 |
+|        |        Original        |        Augment         | Descriptions                                                 |
 | ------ | :--------------------: | :--------------------: | :----------------------------------------------------------- |
 | **CC** | ![CC-O](img/CC-O.jpg)  | ![CC-A](img/CC-A.jpg)  | In Bai et al.’s work, the color of the traffic light is changed by labeling the traffic light bulb and assigning a single color (such as red (255, 0, 0)) to the bulb according to certain rules. On the contrary, we use HSV to change the color tone of traffic lights, which can make the generated images closer to real world and does not require additional labeling of traffic light bulbs. |
 | **MP** | ![MP-O](img/MP-O.jpg)  | ![MP-A](img/MP-A.jpg)  | To make the generated images closer to real life, we only move traffic lights by a small distance when changing the position of traffic lights, ensuring that the traffic lights are still on the lamppost, rather than in other unreasonable places. |
@@ -48,15 +48,15 @@ Following the procedure presented in the paper, we have conducted a detailed ana
 
 ### **mAP of the 8 Retrained Models on Original Dataset, All the Augmented Datasets, and Augmented Datasets of LISA w.r.t 12 Transformations**
 
-|                       |                        |
-| --------------------- | ---------------------- |
-| YOLOv5 - *LISA*       | YOLOv5 - *Bosch*       |
-|                       |                        |
-| YOLOX - *LISA*        | YOLOX - *Bosch*        |
-|                       |                        |
-| Faster R-CNN - *LISA* | Faster R-CNN - *Bosch* |
-|                       |                        |
-| SSD - *LISA*          | SSD - *Bosch*          |
+| ![yolov5-lisa](/Users/leason/Documents/tigaug/img/yolov5-lisa.jpg) | ![yolov5-bosch](img/yolov5-bosch.jpg) |
+| :----------------------------------------------------------: | :-----------------------------------: |
+|                       YOLOv5 - *LISA*                        |           YOLOv5 - *Bosch*            |
+|              ![yolox-lisa](img/yolox-lisa.jpg)               |  ![yolox-bosch](img/yolox-bosch.jpg)  |
+|                        YOLOX - *LISA*                        |            YOLOX - *Bosch*            |
+|             ![faster-lisa](img/faster-lisa.jpg)              | ![faster-bosch](img/faster-bosch.jpg) |
+|                    Faster R-CNN - *LISA*                     |        Faster R-CNN - *Bosch*         |
+|                ![ssd-lisa](img/ssd-lisa.jpg)                 |    ![ssd-bosch](img/ssd-bosch.jpg)    |
+|                         SSD - *LISA*                         |             SSD - *Bosch*             |
 
 **The retrained model using all the augmented training datasets together mostly has a slightly higher mAP than the retrained models using one type of augmented training dataset, and performs much better than original model.** 
 
