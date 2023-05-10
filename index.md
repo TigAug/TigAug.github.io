@@ -48,7 +48,7 @@ Following the procedure presented in the paper, we have conducted a detailed ana
 
 ### **mAP of the 8 Retrained Models on Original Dataset, All the Augmented Datasets, and Augmented Datasets of LISA w.r.t 12 Transformations**
 
-| ![yolov5-lisa](/Users/leason/Documents/tigaug/img/yolov5-lisa.jpg) | ![yolov5-bosch](img/yolov5-bosch.jpg) |
+| ![yolov5-lisa](img/yolov5-lisa.jpg) | ![yolov5-bosch](img/yolov5-bosch.jpg) |
 | :----------------------------------------------------------: | :-----------------------------------: |
 |                       YOLOv5 - *LISA*                        |           YOLOv5 - *Bosch*            |
 |              ![yolox-lisa](img/yolox-lisa.jpg)               |  ![yolox-bosch](img/yolox-bosch.jpg)  |
