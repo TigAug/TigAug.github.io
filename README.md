@@ -29,7 +29,7 @@ In the paper, we describe the implementation of 12 transformation techniques in 
 | **RT** | ![RT-O](img/RT-O.jpg)  | ![RT-A](img/RT-A.jpg)  | By rotating the traffic lights, we transform the originally vertical traffic lights into horizontal traffic lights, which we believe has practical significance in real life. |
 | **SC** | ![SC-O](img/SC-O.jpg)  | ![SC-A](img/SC-A.jpg)  | Compared to directly changing the size of traffic lights in the image, we choose to expand the image and compress it back to its original size, mimicing the effect of taking the image from a larger distance. |
 
-**All the augmented datasets, models we use, and codes  for transformations are available [here](https://zenodo.org/record/7694860).**
+**All the augmented datasets, models we use, and codes  for transformations are available [here](https://zenodo.org/record/8213894).**
 
 ## Research Questions
 
